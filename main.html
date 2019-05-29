@@ -4,18 +4,36 @@
   <link href="main.css" rel="stylesheet"/>
 </head>
 <body>
-<h1 id="title">ROCK, PAPER, SCISSOR....SHOOT!</h1>
-
+  <h1 id="title">ROCK, PAPER, SCISSOR....SHOOT!</h1>
+  
 <div id="choices">
-  <div class="choice" id="rock">ROCK
-   </div>
-    <div class="choice" id="paper">PAPER
-     </div>
-    <div class="choice" id="scissors">SCISSOR
+  <div  id="rock" class="choice" ><img src="rock.jpg" alt="Rock"/>
+    </div>
+      <div  id="paper" class="choice" ><img src="paper.jpg" alt="Paper"/>
+      </div>
+    <div  id="scissors" class="choice" ><img src="scissors.jpg" alt="Scissors"/>
+  </div>
+</div>
+<hr/>
+
+<div class="results">
+  <!-- can change this texted based on result -->
+  <p>Rock beats Scissors, You Win! </p>
+</div>
+<hr/>
+          
+<div id="gameBoard">
+  <div class="box" ><img id="userChoice" src="rock-paper-scissor-ft.jpg" />
+    </div>
+
+      <span id="usersScore">0</span> : <span id="compScore">0</span>
+
+    <div class="box" ><img id="compChoice" src="rock-paper-scissor-ft.jpg" />
   </div>
 </div>
 
 
+<script src="index.js"></script>
 </body>
 
 </html>
