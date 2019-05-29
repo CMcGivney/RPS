@@ -8,17 +8,24 @@ var rock = document.getElementById("rock");
 var paper = document.getElementById("paper");
 var scissors = document.getElementById("scissors");
 
+// var choice = document.getElementsByClassName("choice");
+// for(var i = 0; i < choice.length; i++) {
+//   choice[i].addEventListener("click", function() {
+//     usersChoice = this.id
+//     console.log(usersChoice)
+//     document.getElementById("usersChoice").src = usersChoice;
+//     })
 
 
 function getsCompChoice() {
-var options = ["rock", "paper", "scissors"];
+var choices = ["rock", "paper", "scissors"];
 var randomNumber = options[Math.floor(Math.random() * 3)];
-return options[randomNumber];
+return choices[randomNumber];
 } 
 
-function games(usersChoice) {
+function main(usersChoice) {
 var comChoice = getsCompChoice()
-switch (userChoice + comChoice) {
+switch (usersChoice + comChoice) {
 case "rock scissors":
 case "scissors paper":
 case "paper rock":
@@ -37,60 +44,20 @@ break;
   }
 }
 
-function play() {
-rock.addEventListener('click', function() {
-games("rock");
-})
-paper.addEventListener('click', function() {
-games("paper");
-})
-scissors.addEventListener('click', function() {
-games("scissors");
-})
-
+function game() {
+  console.log(usersChoice)
 }
 
-play();
-// document.getElementById("compChoice").src = compChoice
-
-
-  
-
-
-// display choices
-// figure out winner
-// switch (userschoice)
-
-
-
-
-
-
-
-
-// back up plan for game
-// var rock = document.getElementById("rock")
-// var paper = document.getElementById("paper")
-// var scissors = document.getElementById("scissors")
-// rock.addEventListener("click", usersChoice);
-// console.log(usersChoice)
-// paper.addEventListener("click", usersChoice);
-// scissors.addEventListener("click", usersChoice);
-
-
-// var choice = document.getElementsByClassName("choice");
-// for(var i = 0; i < choice.length; i++) {
-//   choice[i].addEventListener("click", function() {
-//     usersChoice = this.id
-//     console.log(usersChoice)
-//     document.getElementById("usersChoice").src = usersChoice;
-//     debugger
-//   });
-// get the comp choice
-
-
-
-
-
- 
-    
+function choices() {
+rock.addEventListener('click', function() {
+game("rock");
+console.log("rock")
+})
+paper.addEventListener('click', function() {
+game("paper");
+})
+scissors.addEventListener('click', function() {
+game("scissors");
+})
+}
+debugger
