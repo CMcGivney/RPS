@@ -12,10 +12,9 @@ var scissors = document.getElementById("scissors");
 // for(var i = 0; i < choice.length; i++) {
 //   choice[i].addEventListener("click", function() {
 //     usersChoice = this.id
-//     console.log(usersChoice)
-//     document.getElementById("usersChoice").src = usersChoice;
+    
 //     })
-
+//   }
 
 function getsCompChoice() {
 var choices = ["rock", "paper", "scissors"];
@@ -43,15 +42,14 @@ console.log("Draw, Play again.")
 break;
   }
 }
-
 function game() {
   console.log(usersChoice)
 }
 
-function choices() {
+
+function userPick() {
 rock.addEventListener('click', function() {
 game("rock");
-console.log("rock")
 })
 paper.addEventListener('click', function() {
 game("paper");
@@ -60,4 +58,5 @@ scissors.addEventListener('click', function() {
 game("scissors");
 })
 }
-debugger
+
+userPick();
