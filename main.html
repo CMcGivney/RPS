@@ -1,40 +1,54 @@
 <html>
-<head>
-  <title>RPS js</title>
-  <link href="main.css" rel="stylesheet"/>
-  <script src="index.js"></script>
-</head>
-<body>
-  <h1 id="title">ROCK, PAPER, SCISSOR....SHOOT!</h1>
-  
-<div id="choices">
-  <div  id="rock" class="choice" ><img src="rock.jpg" alt="Rock"/>
-    </div>
-      <div  id="paper" class="choice" ><img src="paper.jpg" alt="Paper"/>
-      </div>
-    <div  id="scissors" class="choice" ><img src="scissors.jpg" alt="Scissors"/>
-  </div>
-</div>
-<hr/>
-
-<div class="results">
-  <!-- can change this texted based on result -->
-  <p>Rock beats Scissors, You Win! </p>
-  <span id="usersScore">0</span> : <span id="compScore">0</span>
-</div>
-<hr/>
-          
-<div id="gameBoard">
-  <div class="box" ><img id="userChoice" src="rock-paper-scissor-ft.jpg" />
-    </div>
-    <div class="box" ><img id="compChoice" src="rock-paper-scissor-ft.jpg" />
-    </div>
-</div>
-
+  <head>
+    <title>RPS js</title>
+    <link href="main.css" rel="stylesheet"/>
     
+  </head>
+  
+  <body>
+    <h1 class="title" id="title">ROCK, PAPER, SCISSOR....SHOOT!</h1>
+   
+   
 
-
-<script src="index.js"></script>
-</body>
-
-</html>
+    <div class="" id="choices">
+      <div  id="rock" class="choice" >
+        <img src="rock.jpg" alt="Rock"/>
+      </div>
+      <div  id="paper" class="choice" >
+        <img src="paper.jpg" alt="Paper"/>
+      </div>
+      <div  id="scissors" class="choice" >
+        <img src="scissors.jpg" alt="Scissors"/>
+      </div>
+    </div>
+    
+    
+    <div class="results">
+      <!-- can change this texted based on result -->
+      <div><p id="boardResult"></p></div>
+       <div>
+        <span id="boardUser">WIN</span> | <span id="boardComp">LOSE</span> | <span id="boardDraw">DRAW</span>
+       </div>
+       <div>
+        <span id="usersScore">0</span> : <span id="compScore">0</span> : <span id="gameDraw">0</span>
+       </div>
+    </div>
+   
+    
+    <div id="gameBoard">
+      <div id="player-0"></div>
+      <div class="box" >Player 1:<img id="userChoice" src="rock-paper-scissor-ft.jpg" />  
+      </div>
+      <div id="player-1"></div>
+      <div class="box" >Computer:<img id="compChoice" src="rock-paper-scissor-ft.jpg" />
+        
+      </div>
+    </div>
+    
+    <button class="btn-new"><i class="ion-ios-plus-outline"></i>NEW ROUND</button>
+    
+    
+    <script src="main.js"></script>
+  </body>
+  
+  </html>
