@@ -17,23 +17,11 @@ body {
   
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.player-0-panel,
-.player-1-panel {
-    width: 50%;
-    float: left;
-    height: 600px;
-    padding: 100px;
-}
-
 #choices {
   display: flex;
   padding: 20px;
+  padding: 20px;
+  justify-content: space-around;
 }
 
 #game {
@@ -66,7 +54,7 @@ body {
   text-align: center;
   position: center;
   padding: 20px;
-  top: 20%;
+  margin-top: 25px;
 }
 .results {
   text-align: center;
@@ -76,7 +64,6 @@ body {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   justify-content: center;
-  
 }
 
 .grid-item1 {
@@ -116,13 +103,15 @@ body {
 #gameBoard {
   display:flex;
   padding: 20px;
+  justify-content: space-around;
+  margin-bottom: 25px;
 }
 
 #userChoice {
   border-color: blue;
   }
   
-  #compChoice {
+#compChoice {
   border-color: black;
   }
   
@@ -152,12 +141,9 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
-
-button:focus {
-  outline: none;
-}
+button:hover { font-weight: 600; color: red; }
+button:hover i { margin-right: 20px;}
+button:focus {outline: none;}
 
 i {
   color: #EB4D4D;
