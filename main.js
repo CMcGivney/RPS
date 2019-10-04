@@ -14,6 +14,7 @@ function main() {
     userChoice = "rock"
     getsCompChoice();
     game(userChoice, compChoice);
+    // document.getElementById('rockImg').style.display = 'none';
     document.getElementById('userChoice').src =  userChoice + '.jpg';
     document.getElementById('compChoice').src = compChoice + '.jpg';
   })
